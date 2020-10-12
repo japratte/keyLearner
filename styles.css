@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #b9ddc3;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titleDiv {
+    display: inline-flex;
+    position: absolute;
+}
+
+#title {
+    
+    position: relative;
+    color: black;
+    font-size: 25px;
+    margin-top: -15em;
+
+
+}
+
+.piano {
+    
+    display: flex;
+    position: absolute;
+    
+    margin-top: -12em;
+    text-align: center;
+    color: transparent;
+}
+
+#question1 {
+    
+}
+
+.questionCard {
+    
+    margin-top: 25em;
+    background-color: #d9ffe8;
+    padding: 1em;
+}
+
+#answer1 {
+    
+    font-size: 14px;
+}
+
+.answerCard {
+    position: absolute;
+    margin-top: 40em;
+    background-color: #d9ffe8;
+    padding: 1em;
+}
+
+.key {
+    
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+
+.white {
+    
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.white.active {
+    
+    background-color: #CCC;
+}
+
+.black {
+    
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+
+.black.active {
+    
+    background-color: #333;
+}
